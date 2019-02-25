@@ -1,0 +1,237 @@
+I 2019-02-20 20:45:49:157 c:\projects\webdriver\cpp\webdriver-server\server.cc(87) Starting WebDriver server on port: '35173' on host: ''
+T 2019-02-20 20:45:49:157 c:\projects\webdriver\cpp\webdriver-server\server.cc(712) Entering Server::PopulateCommandRepository
+T 2019-02-20 20:45:49:158 c:\projects\webdriver\cpp\iedriver\ieserver.cpp(32) Entering IEServer::IEServer
+I 2019-02-20 20:45:49:158 c:\projects\webdriver\cpp\iedriver\ieserver.cpp(33) Driver version: 3.14.0.0 (32-bit)
+T 2019-02-20 20:45:49:158 c:\projects\webdriver\cpp\webdriver-server\server.cc(179) Entering Server::Start
+T 2019-02-20 20:45:49:512 c:\projects\webdriver\cpp\webdriver-server\server.cc(233) Entering Server::ProcessRequest
+T 2019-02-20 20:45:49:512 c:\projects\webdriver\cpp\webdriver-server\server.cc(242) Process request with: URI: /status HTTP verb: GET
+body: {}
+T 2019-02-20 20:45:49:512 c:\projects\webdriver\cpp\webdriver-server\server.cc(331) Entering Server::DispatchCommand
+T 2019-02-20 20:45:49:513 c:\projects\webdriver\cpp\webdriver-server\server.cc(661) Entering Server::LookupCommand
+D 2019-02-20 20:45:49:513 c:\projects\webdriver\cpp\webdriver-server\server.cc(340) Command: GET /status {}
+T 2019-02-20 20:45:49:513 c:\projects\webdriver\cpp\iedriver\ieserver.cpp(51) Entering IEServer::GetStatus
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\response.cc(78) Entering Response::SetSuccessResponse
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\response.cc(84) Entering Response::SetResponse
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\response.cc(57) Entering Response::Serialize
+D 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\server.cc(416) Response: {
+	"value" : 
+	{
+		"build" : 
+		{
+			"version" : "3.14.0.0 (32-bit)"
+		},
+		"message" : "Ready to create session",
+		"os" : 
+		{
+			"arch" : "x64",
+			"name" : "windows",
+			"version" : "6.3.9600.18217 (winblue_ltsb.160124-0053)"
+		},
+		"ready" : true
+	}
+}
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\server.cc(469) Entering Server::SendResponseToClient
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2019-02-20 20:45:49:514 c:\projects\webdriver\cpp\webdriver-server\server.cc(523) Entering Server::SendHttpOk
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(233) Entering Server::ProcessRequest
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(297) Entering Server::ReadRequestBody
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(242) Process request with: URI: /session HTTP verb: POST
+body: {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer",
+    "ensureCleanSession": true,
+    "version": "",
+    "platform": "WINDOWS"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "platformName": "windows",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+}
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(331) Entering Server::DispatchCommand
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(661) Entering Server::LookupCommand
+D 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\webdriver-server\server.cc(340) Command: POST /session {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer",
+    "ensureCleanSession": true,
+    "version": "",
+    "platform": "WINDOWS"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "platformName": "windows",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+}
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\iedriver\ieserver.cpp(42) Entering IEServer::InitializeSession
+T 2019-02-20 20:45:49:782 c:\projects\webdriver\cpp\iedriver\iesession.cpp(38) Entering IESession::Initialize
+D 2019-02-20 20:45:49:783 c:\projects\webdriver\cpp\iedriver\iesession.cpp(53) Mutex acquired for session initalization
+T 2019-02-20 20:45:49:783 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(594) Entering IECommandExecutor::ThreadProc
+T 2019-02-20 20:45:49:788 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(56) Entering IECommandExecutor::OnCreate
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(1066) Entering IECommandExecutor::PopulateElementFinderMethods
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\inputmanager.cpp(54) Entering InputManager::InputManager
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1009) Entering BrowserFactory::GetExecutableLocation
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\registryutilities.cpp(49) Attempting to get registry value  from HKEY_LOCAL_MACHINE\SOFTWARE\Classes\InternetExplorer.Application\CLSID
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\registryutilities.cpp(133) Retrieved value {0002DF01-0000-0000-C000-000000000046}
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\registryutilities.cpp(49) Attempting to get registry value  from HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0002DF01-0000-0000-C000-000000000046}\LocalServer32
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\registryutilities.cpp(133) Retrieved value "%ProgramFiles%\Internet Explorer\iexplore.exe"
+T 2019-02-20 20:45:49:789 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1058) Entering BrowserFactory::GetIEVersion
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\commandhandlerrepository.cpp(109) Entering CommandHandlerRepository::PopulateCommandHandlers
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\iesession.cpp(99) Created thread for command executor returns HWND: '01000B1E'
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\iesession.cpp(103) Session id is retrived from command executor window: 'de085b88-60bb-4aa5-a5d8-b8f7819d36e8'
+D 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\iesession.cpp(109) Releasing session initialization mutex
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\iesession.cpp(191) Entering IESession::ExecuteCommand
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(131) Entering IECommandExecutor::OnSetCommand
+T 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\webdriver-server\command.cc(31) Entering Command::Deserialize
+D 2019-02-20 20:45:49:792 c:\projects\webdriver\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "newSession", "locator" : { }, "parameters" : {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer",
+    "ensureCleanSession": true,
+    "version": "",
+    "platform": "WINDOWS"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "platformName": "windows",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+} }
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\iesession.cpp(212) Beginning wait for response length to be not zero
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(142) Entering IECommandExecutor::OnExecCommand
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(666) Entering IECommandExecutor::DispatchCommand
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(46) Found W3C capabilities structure
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(209) Entering NewSessionCommandHandler::ValidateArguments
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(225) Validating alwaysMatch capability set
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(598) Entering NewSessionCommandHandler::ValidateCapabilities
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(599) Validating capabilities object
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(246) Validating firstMatch capability set with index 0
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(598) Entering NewSessionCommandHandler::ValidateCapabilities
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(599) Validating capabilities object
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(634) Found browserName capability. Validating value type is string.
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(663) Found platformName capability. Validating value type is string.
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(890) Found se:ieOptions capability. Validating value type is object.
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(574) Entering NewSessionCommandHandler::MergeCapabilities
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(295) Entering NewSessionCommandHandler::ProcessCapabilities
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(515) Entering NewSessionCommandHandler::MatchCapabilities
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(300) Processing matched capability set with index 0
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability unhandledPromptBehavior
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability pageLoadStrategy
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(169) Entering NewSessionCommandHandler::GetPageLoadStrategyValue
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability timeouts
+W 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(107) Invalid capability setting: timeouts is type null instead of object. Default value will be used: null
+
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(346) Entering NewSessionCommandHandler::SetTimeoutSettings
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(360) Entering NewSessionCommandHandler::SetBrowserFactorySettings
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ignoreProtectedModeSettings
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ignoreZoomSetting
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability browserAttachTimeout
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability initialBrowserUrl
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ie.forceCreateProcessApi
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ie.forceShellWindowsApi
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ie.browserCommandLineSwitches
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ie.ensureCleanSession
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(114) Entering BrowserFactory::Initialize
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(439) Entering NewSessionCommandHandler::SetInputSettings
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability nativeEvents
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability elementScrollBehavior
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability requireWindowFocus
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability ie.fileUploadDialogTimeout
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(103) Entering NewSessionCommandHandler::GetCapability for capability enablePersistentHover
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\inputmanager.cpp(80) Entering InputManager::Initialize
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(470) Entering NewSessionCommandHandler::CreateReturnedCapabilities
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(944) Entering IECommandExecutor::CreateNewBrowser
+T 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(143) Entering BrowserFactory::LaunchBrowserProcess
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(147) Ignoring Protected Mode Settings: 0
+D 2019-02-20 20:45:49:793 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(150) Checking validity of Protected Mode settings.
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1077) Entering BrowserFactory::ProtectedModeSettingsAreValid
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1080) Detected IE version: 11, Windows version supports Protected Mode: 1
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1154) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 0 for zone 1
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1154) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 0 for zone 2
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1154) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 0 for zone 3
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1154) Entering BrowserFactory::GetZoneProtectedModeSetting
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 0 for zone 4
+D 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(153) Has Valid Protected Mode Settings: 1
+T 2019-02-20 20:45:49:794 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(227) Entering BrowserFactory::IsIELaunchURLAvailable
+T 2019-02-20 20:45:49:803 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(131) Entering BrowserFactory::ClearCache
+T 2019-02-20 20:45:49:803 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(248) Entering BrowserFactory::LaunchBrowserUsingIELaunchURL
+D 2019-02-20 20:45:49:803 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(249) Starting IE using the IELaunchURL API
+W 2019-02-20 20:45:51:856 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(254) -2147024891 [Access is denied.]: Error using IELaunchURL to start IE
+W 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(948) Unable to launch browser, received NULL process ID
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\webdriver-server\response.cc(91) Entering Response::SetErrorResponse
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\webdriver-server\response.cc(84) Entering Response::SetResponse
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(890) Entering IECommandExecutor::GetCurrentBrowser
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(896) Entering IECommandExecutor::GetManagedBrowser
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(899) Current command executor is not valid
+W 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(780) Unable to get current browser
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\webdriver-server\response.cc(57) Entering Response::Serialize
+D 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(786) Setting serialized response to {
+	"value" : 
+	{
+		"data" : null,
+		"error" : "session not created",
+		"message" : "Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070005 ('Access is denied.') for URL 'http://localhost:35173/'",
+		"stacktrace" : ""
+	}
+}
+D 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(787) Is waiting flag: 0
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iesession.cpp(221) Found non-zero response length
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(165) Entering IECommandExecutor::OnGetResponse
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(347) Entering IECommandExecutor::OnIsSessionValid
+T 2019-02-20 20:45:51:857 c:\projects\webdriver\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\webdriver-server\server.cc(284) Entering Server::ShutDownSession
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(119) Entering IESession::ShutDown
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(173) Entering IESession::WaitForCommandExecutorExit
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(150) Executor shutdown successful!
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(158) Posting thread shutdown message
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(161) Starting wait for thread completion
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(644) Shutdown message received
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iesession.cpp(164) Waiting for thread to end returned 4294967295
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\webdriver-server\server.cc(416) Response: {
+	"value" : 
+	{
+		"data" : null,
+		"error" : "session not created",
+		"message" : "Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070005 ('Access is denied.') for URL 'http://localhost:35173/'",
+		"stacktrace" : ""
+	}
+}
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\webdriver-server\server.cc(469) Entering Server::SendResponseToClient
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(106) Entering IECommandExecutor::OnDestroy
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(108) Clearing managed element cache
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\webdriver-server\response.cc(30) Entering Response::Deserialize
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(111) Closing command handler repository
+T 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\webdriver-server\server.cc(563) Entering Server::SendHttpInternalError
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(113) Closing element finder
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(115) Closing input manager
+D 2019-02-20 20:45:51:858 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(117) Closing proxy manager
+T 2019-02-20 20:45:51:859 c:\projects\webdriver\cpp\iedriver\proxymanager.cpp(185) ProxyManager::RestoreProxySettings
+D 2019-02-20 20:45:51:859 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(119) Closing browser factory
+D 2019-02-20 20:45:51:859 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(121) Posting quit message
+D 2019-02-20 20:45:51:859 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(123) Leaving IECommandExecutor::OnDestroy
+D 2019-02-20 20:45:51:859 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(646) Returned from DestroyWindow()
+D 2019-02-20 20:45:51:860 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(659) Exited IECommandExecutor thread message loop
