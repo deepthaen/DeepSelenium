@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -26,25 +27,41 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		driver.get("http://www.nnnow.com");
 		System.out.println("Launched Browser By Chrome");
 		
+		// max screen
 		driver.manage().window().maximize();
 		System.out.println("Maximized Screen");
 		
 		
-       
+       // Pgae title
 		String pageTitle = driver.getTitle();
 		System.out.println("Web Page Title :: " + pageTitle);
 		
+		// refresh page
 		driver.navigate().refresh();
 		System.out.println("Refresh Screen");
+		
+		// Scroll to botton of webpage
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		 System.out.println("scroll botton of page");
+		 //scroll top pf page
+		js .executeScript("window.scrollTo(0, -document.body.scrollHeight)");
+		System.out.println("scroll top of page");
 	
+/*
+	// Mimize screen
 		Dimension windowMinSize = new Dimension(100,100);
 		driver.manage().window().setSize(windowMinSize);
-		System.out.println("Minized Screen");
-	/*	driver.findElement(By.xpath("//span[contains(text(),'LOGIN')]")).click();
+				System.out.println("Minized Screen");
+				
+		driver.findElement(By.xpath("//span[contains(text(),'LOGIN')]")).click();
 		driver.findElement(By.xpath("//input[@name='text']")).sendKeys("deeptha@arvindinternet.com");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("nnnow123");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		System.out.println("Logged into website");
+		
+		//Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[text()='Trend of the week']"))));
 		
@@ -80,5 +97,6 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 		capabilities.setJavascriptEnabled(true);
 		return capabilities;
-	} */}
-}
+	} }  */
+
+}}
