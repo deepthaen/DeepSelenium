@@ -29,7 +29,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		
 		driver.manage().window().maximize();
 		
-	/*	
+	
 		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		 
@@ -41,7 +41,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		 
 		 System.out.println(links.get(i).getText());
 		 
-		 } */
+		 } 
 
 	}   
 

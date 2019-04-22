@@ -1,26 +1,22 @@
 package com.Arvind.DeepSelenium;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import dataexcel.ReadExcel;
 
+public class LoginUsingExcelData {
 
-public class LoginNNNOWProperties {
-	
-	public LoginNNNOWProperties(WebDriver driver) {
+	public LoginUsingExcelData(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -56,16 +52,12 @@ public class LoginNNNOWProperties {
 
 
 
-public void enterCredentials() {
+public void enterCredentials() throws EncryptedDocumentException, InvalidFormatException, IOException {
 
-	
-    String un = getpropvalue("UserName");
-	String pwd = getpropvalue("password");
-	Reporter.log("Logging With :: "+un,true);
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver, 30);
-		 * wait.until(ExpectedConditions.elementToBeClickable(Login));
-		 */
+	String testcase= "test1";
+	String username = ReadExcel.readCredentials(testcase, "UserName");
+	String pwd = ReadExcel.readCredentials(testcase, "Password");
+
 	try {
 		Thread.sleep(2000);
 	} catch (InterruptedException e) {
@@ -73,15 +65,11 @@ public void enterCredentials() {
 		e.printStackTrace();
 	}
 	Login.click();
-	email.sendKeys(un);
-	System.out.println(un);
+	email.sendKeys(username);
+	System.out.println(username);
 	password.sendKeys(pwd);
 	System.out.println(pwd);
 	loginButton.click();
 	
 }
-
-
-	
-	
 }

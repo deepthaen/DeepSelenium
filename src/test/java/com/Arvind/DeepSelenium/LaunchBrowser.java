@@ -48,7 +48,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		 //scroll top pf page
 		js .executeScript("window.scrollTo(0, -document.body.scrollHeight)");
 		System.out.println("scroll top of page");
-	
+	}}
 /*
 	// Mimize screen
 		Dimension windowMinSize = new Dimension(100,100);
@@ -72,9 +72,9 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		System.out.println("Clicked on product");
 		driver.quit();
        
-	}
+	}*/
 
-	
+/*	
 	public static DesiredCapabilities getChromeConfig() {
 
 
@@ -97,6 +97,4 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\DEEPTHA.NAIK\\Download
 		capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 		capabilities.setJavascriptEnabled(true);
 		return capabilities;
-	} }  */
-
-}}
+	}  */
